@@ -1,0 +1,61 @@
+:root {
+    --pink: #fbe6f4ff;
+    --yellow: #fffad1ff;
+    --green: #e1f0e5ff;
+    --blue: #b5caf9ff;
+    --orange: #f5e6db;
+    --raisin: #2b283aff;
+    --grey: #d4d4d4;
+}
+
+body {
+    background-color: var(--raisin);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    font-size: 2em;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+.countdown-display {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#blast-off {
+    background-color: orangered;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+.launch {
+    animation: launch 5s linear infinite;
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: 1;
+}
+
+.reset {
+    transform: translate(0, 0)
+}
+
+@keyframes launch {
+    0% {
+        transform: translate(0, 0)
+    }
+
+    100% {
+        transform: translate(1000px, -1500px)
+    }
+}
