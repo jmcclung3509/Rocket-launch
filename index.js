@@ -1,7 +1,7 @@
 const blastOffBtn = document.getElementById("blast-off")
 const countdownDisplay = document.getElementById("countdown-display")
 const rocket = document.getElementById("rocket")
-let timeRemaining = 60
+let timeRemaining = 10
 let timeInterval 
 
 
@@ -16,7 +16,7 @@ blastOffBtn.addEventListener("click", function () {
 
 function start() {
     
-        timeRemaining = 60
+        timeRemaining = 10
         timeInterval = setInterval(countdown, 1000);
        
         }
@@ -62,7 +62,7 @@ function setButton(){
                 blastOffBtn.innerText = "BLAST OFF!"
                 setTimeout(()=> {
                         blastOffBtn.innerText = "LAUNCH ROCKET!"
-                      countdownDisplay.innerText = 60
+                      countdownDisplay.innerText = 10
                 }, 3500)
           
                         
